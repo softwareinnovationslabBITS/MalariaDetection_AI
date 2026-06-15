@@ -1,8 +1,8 @@
-\# Malaria Species Classification using Deep Learning
+** Malaria Species Classification using Deep Learning**
 
 
 
-\## Overview
+Overview
 
 
 
