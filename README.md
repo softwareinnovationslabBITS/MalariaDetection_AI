@@ -1,8 +1,9 @@
-# H-CAST: Hierarchical Classification Framework with Swin Transformer for Automated Malaria Diagnosis
+# # DSH-Net
+### Self-Supervised DINOv2 Embeddings with Hybrid Swin Transformer and H-CAST Architecture for Malaria Parasite Species Classification in Thin Blood Smear Images
 
 ## Overview
 
-This repository contains the implementation of **H-CAST (Hierarchical Classification and Attention-based Swin Transformer)**, a deep learning framework for automated malaria diagnosis from microscopy image embeddings.
+This repository contains the implementation DSH-Net. It is a hierarchical transformer-based framework that integrates self-supervised DINOv2 embeddings, Swin Transformer learning, and H-CAST classification for automated malaria parasite species classification from thin blood smear microscopy images.
 
 The proposed framework performs hierarchical classification at two clinically relevant levels:
 
@@ -11,21 +12,18 @@ The proposed framework performs hierarchical classification at two clinically re
 
 The model combines a Swin Transformer backbone with hierarchical prediction heads and a Tree-Path Consistency mechanism to enforce biologically meaningful predictions across classification levels.
 
----
-
 ## Key Features
 
-* Hierarchical malaria classification
-* Swin Transformer backbone with shifted window attention
-* Tree-Path Consistency regularization
-* Automated infection detection
-* Species-level malaria classification
-* Comprehensive performance evaluation
-* ROC-AUC analysis
-* Confusion matrix visualization
-* Automated report generation
+## Highlights
 
----
+- Novel DINOv2 + Swin Transformer + H-CAST framework
+- Hierarchical malaria diagnosis pipeline
+- 18,847 thin blood smear microscopy images
+- Explainable AI analysis using Grad-CAM and saliency maps
+- Best accuracy: 98.20%
+- Evaluated across multiple train-validation-test splits
+- Developed in collaboration with ICMR-NIMR and BITS Pilani
+
 
 ## Model Architecture
 
@@ -48,7 +46,6 @@ The extracted features are processed by two hierarchical prediction branches:
 
 A Tree-Path Consistency layer is incorporated to ensure prediction consistency across the classification hierarchy.
 
----
 
 ## Dataset
 
@@ -62,11 +59,10 @@ The dataset includes:
 
 Image embeddings are generated prior to training and stored as compressed NumPy files (`.npz`).
 
----
 
 ## Repository Structure
 
-```text
+
 .
 ├── HCAST_Swin.py
 ├── HCAST_ViT.py
@@ -77,9 +73,7 @@ Image embeddings are generated prior to training and stored as compressed NumPy 
 ├── README.md
 ├── requirements.txt
 └── figures/
-```
 
----
 
 ## Evaluation Metrics
 
@@ -95,7 +89,6 @@ The following metrics are reported:
 * Geometric Mean (G-Mean)
 * Area Under the ROC Curve (AUC)
 
----
 
 ## Authors
 
